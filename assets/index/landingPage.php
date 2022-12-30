@@ -51,7 +51,7 @@ session_destroy();
                 <a href="./index.php" class="btn">Testar</a>
             </div>
             <div class="direita">
-                <img src="../style/math.png" alt="imagem-garota ">
+            <img src="../style/math.png" alt="imagem-garota ">
                 <div class="sombra"></div>
             </div>
         </section>

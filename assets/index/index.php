@@ -24,6 +24,7 @@ include_once "teste.php";
 if (isset($_POST["num"])) {
   $num = $_POST["num"];
 }
+
 ?>
 
 <!doctype html>
