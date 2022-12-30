@@ -38,7 +38,7 @@ session_destroy();
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Sobre</a></li>
                 <li><a href="https://github.com/jeanziin">Portfólio</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="https://www.linkedin.com/in/jean-freitas-4b700a231/">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -51,7 +51,7 @@ session_destroy();
                 <a href="./index.php" class="btn">Testar</a>
             </div>
             <div class="direita">
-                <img src="../style/math.png" alt="imagem de erro 404">
+                <img src="../style/math.png" alt="imagem-garota ">
                 <div class="sombra"></div>
             </div>
         </section>
