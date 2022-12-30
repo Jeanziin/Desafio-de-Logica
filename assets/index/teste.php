@@ -1,14 +1,14 @@
 <?php
 
-function ChecarNumeroPrimo($num)
+function ChecarNumeroPrimo($checarNum)
 {
-  if (is_numeric($num)) {
+  if (is_numeric($checarNum)) {
 
-    if ($num == 1)
+    if ($checarNum == 1)
       return 0;
 
-    for ($cont = 2; $cont <= (int)$num / 2; $cont++) {
-      if ($num % $cont == 0)
+    for ($cont = 2; $cont <= (int)$checarNum / 2; $cont++) {
+      if ($checarNum % $cont == 0)
         return 0;
     }
     return 1;
@@ -17,8 +17,8 @@ function ChecarNumeroPrimo($num)
   }
 }
 
-$num = 6;
-$checar = ChecarNumeroPrimo($num);
+$checarNum = 6;
+$checar = ChecarNumeroPrimo($checarNum);
 /* if ($checar == 1)
     echo "Número Primo!";
 else
