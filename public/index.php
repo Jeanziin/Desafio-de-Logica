@@ -36,7 +36,7 @@ if (isset($_POST["num"])) {
   <title>Teste</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <link rel="stylesheet" href="../style_index.css">
+  <link rel="stylesheet" href="../public/css/style_index.css">
 
 
 </head>
@@ -71,7 +71,7 @@ if (isset($_POST["num"])) {
                 ?>
               </div>
               <div class="direita">
-                <img src="../style/math.png" alt="imagem">
+                <img src="../public/images/math.png" alt="imagem">
                 <div class="sombra"></div>
               </div>
             </div>

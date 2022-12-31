@@ -8,7 +8,7 @@ function ChecarNumeroPrimo($num)
       return "Número Primo!";
     
     for ($cont = 2; $cont <= (int)$num / 2; $cont++) {
-      if ($num % $cont == 0)
+      if ($num % $cont == 0)  
         return "Não é um Número Primo!";
     }
     return "Número Primo!";
