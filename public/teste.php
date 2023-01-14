@@ -7,7 +7,7 @@ function ChecarNumeroPrimo($num)
     if ($num == 1) 
       return false;
     
-    for ($cont = 2; $cont <= (int)$num / 2; $cont++) { 
+    for ($cont = 2; $cont <= (int)$num / 2; $cont++) {
       if ($num % $cont == 0)  
         return false;
     }
@@ -18,20 +18,19 @@ function ChecarNumeroPrimo($num)
   }
 }
 
-
-function  Desafio_Conjectura_Goldbach($num)
+function  Desafio_Conjectura_Goldbach($userInput)
 {
-  if (is_numeric($num)) {
-    for ($cont = 4; $num >= $cont; $cont+=2) {
+  if (is_numeric($userInput)) { 
+    for ($cont = 4; $userInput >= $cont; $cont+=2) { 
 
-      for ($num_Primo = 2; $num_Primo < $cont; $num_Primo++) {
+      for ($numero = 2; $numero < $cont; $numero++) { 
 
-        if ($num_Primo < 2 || $num_Primo % 2 != 0) {
+        if (ChecarNumeroPrimo($numero)) { 
 
-          if ($num_Primo + ($cont - $num_Primo) == $cont) {
+          $resto = $cont - $numero;
 
-            $VerificarSoma = $cont - $num_Primo;
-            echo "Conjectura Goldbach verdadeira para: $cont <br> sendo $cont = $num_Primo + $VerificarSoma" . "\n";
+          if (ChecarNumeroPrimo($resto)){
+            echo "Conjectura Goldbach verdadeira para: $cont <br> sendo $cont = $numero + $resto" . "\n";
           }
         }
       }
