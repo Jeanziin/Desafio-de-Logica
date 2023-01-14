@@ -4,16 +4,17 @@ function ChecarNumeroPrimo($num)
 {
   if (is_numeric($num)) {
 
-    if ($num == 1)
-      return "Número Primo!";
+    if ($num == 1) 
+      return false;
     
-    for ($cont = 2; $cont <= (int)$num / 2; $cont++) {
+    for ($cont = 2; $cont <= (int)$num / 2; $cont++) { 
       if ($num % $cont == 0)  
-        return "Não é um Número Primo!";
+        return false;
     }
-    return "Número Primo!";
+    return true; 
   } else {
-    echo "O Valor digitado não é um Valor númerico.";
+    return false;
+    
   }
 }
 
